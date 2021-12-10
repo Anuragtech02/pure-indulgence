@@ -1,0 +1,229 @@
+//font Color
+$clr-text-dark-0: #333333;
+$clr-text-dark-1: #666666;
+
+//Current Fonts
+.fontTitle {
+  @extend .fontTitle42Bold;
+}
+.fontSubtitleBold {
+  @extend .fontSubtitle20Bold;
+}
+.fontSubtitle {
+  @extend .fontSubtitle20Medium;
+}
+.fontBodySemiBold {
+  @extend .fontBody16SemiBold;
+}
+.fontBodySemiBoldUnderline {
+  @extend .fontBody16SemiBoldUnderline;
+}
+.fontBody {
+  color: $clr-text-dark-1;
+  @extend .fontBody16Regular;
+}
+.fontBodyUnderline {
+  @extend .fontBody16RegularUnderline;
+}
+
+// CONSTANTS
+
+$nav-height: 90px;
+$clr-primary: #33cc00;
+//Breakpoints
+$screen-lg: 1500px;
+$screen-md: 1200px;
+$screen-sm: 900px; //also the breakpoint for drawer
+$screen-xs: 400px;
+
+//Text Transform
+.fontCapitalize {
+  text-transform: capitalize;
+}
+.fontLowercase {
+  text-transform: lowercase;
+}
+.fontUppercase {
+  text-transform: uppercase;
+}
+//----------------------------------------------------------- Positioning Starts //
+.flexRow {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+//----------------------------------------------------------- Positioning Ends //
+
+//----------------------------------------------------------- Spacing Starts //
+.globalPadding {
+  padding: 15px;
+}
+.globalTopMargin {
+  margin-top: $nav-height;
+}
+.rulerMargin {
+  margin: 0px 200px;
+  @media screen and (max-width: $screen-lg) {
+    margin: 0px 100px;
+  }
+  @media screen and (max-width: $screen-md) {
+    margin: 0px 50px;
+  }
+  @media screen and (max-width: $screen-sm) {
+    margin: 0px 20px;
+  }
+  @media screen and (max-width: $screen-xs) {
+    margin: 0px 5px;
+  }
+}
+//----------------------------------------------------------- Spacing Ends //
+
+//----------------------------------------------------------- Font Starts //
+
+//font fetching
+@font-face {
+  font-family: Hellix-Medium;
+  src: url(../assets/fonts/Hellix-Medium.ttf);
+}
+@font-face {
+  font-family: Hellix-Regular;
+  src: url(../assets/fonts/Hellix-Regular.ttf);
+}
+@font-face {
+  font-family: Hellix-SemiBold;
+  src: url(../assets/fonts/Hellix-SemiBold.ttf);
+}
+@font-face {
+  font-family: Hellix-Bold;
+  src: url(../assets/fonts/Hellix-Bold.ttf);
+}
+
+// Title Fonts -----------------------------------------//
+.fontTitle42Bold {
+  font-family: Hellix-Bold;
+  font-size: 42px;
+  line-height: 58px;
+}
+.fontTitle32Bold {
+  font-family: Hellix-Bold;
+  font-size: 32px;
+  line-height: 40px;
+}
+.fontTitle24Bold {
+  font-family: Hellix-Bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+.fontTitle24Medium {
+  font-family: Hellix-Medium;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+// Subtitle Fonts -----------------------------------------//
+.fontSubtitle20Bold {
+  font-family: Hellix-Bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+.fontSubtitle20Medium {
+  font-family: Hellix-Medium;
+  font-size: 20px;
+  line-height: 30px;
+}
+.fontSubtitle18Bold {
+  font-family: Hellix-Bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+.fontSubtitle18SemiBold {
+  font-family: Hellix-SemiBold;
+  font-size: 18px;
+  line-height: 28px;
+}
+.fontSubtitle18Medium {
+  font-family: Hellix-Medium;
+  font-size: 18px;
+  line-height: 28px;
+}
+// Body Fonts -----------------------------------------//
+.fontSubtitle18Regular {
+  font-family: Hellix-Regular;
+  font-size: 18px;
+  line-height: 28px;
+}
+.fontBody16SemiBold {
+  font-family: Hellix-SemiBold;
+  font-size: 16px;
+  line-height: 24px;
+}
+.fontBody16SemiBoldUnderline {
+  font-family: Hellix-SemiBold;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: underline;
+}
+.fontBody16Regular {
+  font-family: Hellix-Regular;
+  font-size: 16px;
+  line-height: 24px;
+}
+.fontBody16RegularUnderline {
+  font-family: Hellix-Regular;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: underline;
+}
+.fontBody14SemiBold {
+  font-family: Hellix-SemiBold;
+  font-size: 14px;
+  line-height: 22px;
+}
+.fontBody14SemiBoldUnderline {
+  font-family: Hellix-SemiBold;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: underline;
+}
+.fontBody14Regular {
+  font-family: Hellix-Regular;
+  font-size: 14px;
+  line-height: 22px;
+}
+.fontBody14RegularUnderline {
+  font-family: Hellix-Regular;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: underline;
+}
+
+// Caption Fonts -----------------------------------------//
+.fontCaption12SemiBold {
+  font-family: Hellix-SemiBold;
+  font-size: 12px;
+  line-height: 18px;
+}
+.fontCaption12SemiBoldUnderline {
+  font-family: Hellix-SemiBold;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+.fontCaption12Regular {
+  font-family: Hellix-Regular;
+  font-size: 12px;
+  line-height: 18px;
+}
+.fontCaption12RegularUnderline {
+  font-family: Hellix-Regular;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+//----------------------------------------------------------- Font Ends //

@@ -1,0 +1,13 @@
+@import "./utils/common.scss";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  color: $clr-text-dark-0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Hellix-Regular;
+}
+.container {
+  @extend .globalTopMargin;
+}
